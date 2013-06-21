@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.junit.Test;
 
-import com.br.caleum.state.No;
+import com.br.caelum.state.No;
 
 public class NoTest {
 
