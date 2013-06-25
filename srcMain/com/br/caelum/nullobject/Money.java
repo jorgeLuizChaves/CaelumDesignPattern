@@ -6,9 +6,9 @@ import java.math.MathContext;
 public final class Money {
 
 	private static final int THREE = 3;
-	private static final String ZERO = "0.00";
+	private static final String REAL_SIGNAL = "R$";
 	private static final MathContext PRECISION = new MathContext(2);
-	public static final Money MONEY_ZERO_VALUE = new Money(new BigDecimal(ZERO)); 
+	public static final Money MONEY_ZERO_VALUE = new Money(BigDecimal.ZERO); 
 	private BigDecimal currency;
 	
 	private Money(){}
@@ -31,7 +31,7 @@ public final class Money {
 	
 	@Override
 	public String toString(){
-		return String.format("%s %s","R$", currency.round(PRECISION));
+		return String.format("%s %s",REAL_SIGNAL, currency.round(PRECISION));
 	}
 	
 	@Override
