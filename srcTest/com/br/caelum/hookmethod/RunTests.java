@@ -5,7 +5,7 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
-@SuiteClasses({ SuperClassTest.class })
+@SuiteClasses({SuperClassTest.class})
 public class RunTests {
 
 }
