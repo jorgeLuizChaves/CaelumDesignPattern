@@ -31,8 +31,7 @@ public class MoneyTest {
     public void testMoneyCurrencyWhenCurrencyIsNull() {
         BigDecimal currency = null;
         Money money = Money.methodFactory(currency);
-        //Assert.assertEquals(Money.MONEY_ZERO_VALUE, money);
-        Assert.assertEquals(new Money(new BigDecimal("2")), money);
+        Assert.assertEquals(Money.MONEY_ZERO_VALUE, money);
     }
 
 }
