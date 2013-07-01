@@ -2,7 +2,7 @@ package com.br.caelum.factorymethod;
 
 public abstract class AbstractService<T> {
 
-    public abstract DAO<T> getDAO();
+    public abstract Dao<T> getDAO();
 
     public final void save(T t) {
         getDAO().save(t);

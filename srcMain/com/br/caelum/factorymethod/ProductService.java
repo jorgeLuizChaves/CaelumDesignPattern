@@ -2,12 +2,12 @@ package com.br.caelum.factorymethod;
 
 public class ProductService extends AbstractService<Product> {
 
-    private DAO<Product> dao;
+    private Dao<Product> dao;
 
     @Override
-    public DAO<Product> getDAO() {
+    public Dao<Product> getDAO() {
         if (dao == null) {
-            return new ProductDAO();
+            return new ProductDao();
         }
         return dao;
     }
