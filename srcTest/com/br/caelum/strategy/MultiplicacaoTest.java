@@ -13,7 +13,7 @@ public class MultiplicacaoTest {
         Aritmetica operacaoMultiplicacao = new Multiplicacao();
 
         int resultadoAtual = operacaoMultiplicacao.operacao(numero01, numero02);
-        Assert.assertEquals(2, resultadoAtual);
+        Assert.assertEquals(resultadoEsperado , resultadoAtual);
     }
 
 }
