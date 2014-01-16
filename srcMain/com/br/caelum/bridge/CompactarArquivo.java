@@ -15,7 +15,7 @@ public class CompactarArquivo extends PosProcessamento {
         out.write(bytes);
         out.closeEntry();
         out.close();
-        return byteOut.toByteArray();
+        return byteOut.toByteArray()
     }
 
 }
